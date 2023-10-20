@@ -1,38 +1,390 @@
-.App {
-  text-align: center;
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Raleway&display=swap');
+
+
+*{
+  margin: 0;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+}
+body{
+background-color: #f2f6ff ;
+font-family: 'Raleway', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  margin-top: -100px;
+ background-color: #ffffff;
+ box-shadow: 0px 1px 1px #ccc;
+}
+.left-topbar{
+  display: flex;
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 50px;
+}
+.right-topbar{
+  display: flex;
+
+  margin: 10px;
+  align-items: center;
+}
+.edyoda-stories{
+  margin: 30px;
+  list-style: none;
+
+  width: 150px;
+   
+
+}
+.edyoda-logo{
+  width: 130px;
+    font-size: 32px;
+    color: #0084ff;
+    font-weight: 900;
+    font-family: sans-serif;
+    background-clip: text;
+
+  /* font-size: large;
+  margin-top: 0;
+  color: #0084FF;
+  font-size: 24px;
+  color: #ff0000;
+  text-transform: uppercase;
+  text-align: center;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  font-family: Raleway,sans-serif,Arial;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: bolder;
+  font-stretch: normal; 
+  line-height: 1.08;
+  letter-spacing: -.9px;
+  text-align: left;
+  font-size: 2.1em;
+    margin-top: 10;
+    width: 150px;
+    background-image: -webkit-linear-gradient(181deg,#0048ff,#0096ff),-webkit-linear-gradient(#000,#000);
+    background-image: -o-linear-gradient(181deg,#0048ff,#0096ff),-o-linear-gradient(#000,#000);
+    background-image: linear-gradient(269deg,#0048ff,#0096ff),linear-gradient(#000,#000);
+    color: #0084ff;
+   
+    background-clip: text; */
+    
+
+}
+.storie-text{
+  margin: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+  font-family: Raleway,sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: .8;
+  letter-spacing: .9px;
+  color: #000;
+  width: 100px;
+  
+
+  
+}
+.explore-categories{
+
+  margin-left: 30px;
+  font-style: normal;
+  font-stretch: normal;
+}
+.drop-down{
+  margin-left: 10px;
+}
+.topbar-para{
+  min-width: 23em;
+  opacity: .6;
+  font-family: Raleway,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: .4px;
+  text-align: left;
+  color: rgba(0,0,0,.6);
+  margin-top: 0.5em;
+}
+.website-btn{
+ 
+
+    width: auto;
+    height: 40px;
+    min-width: 100px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    border-radius: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    padding: 8px 32px;
+    margin-right: 16px;
+    color: #fff;
+    outline: none;
+    font-family: Raleway,sans-serif;
+    font-size: .9em;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: .03em;
+    background: #0084ff;
+    background: -webkit-linear-gradient(269deg,#0048ff,#0096ff);
+    background: -webkit-linear-gradient(181deg,#0048ff,#0096ff);
+    background: -o-linear-gradient(181deg,#0048ff,#0096ff);
+    background: linear-gradient(269deg,#0048ff,#0096ff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0084ff",endColorstr="#0052ff",GradientType=1);
+
+  
+}
+.latest-post-blog{
+
+  margin-top: 100px;
+  width: 70%;
+  margin-left: 200px ;
+  margin-bottom: 20px;
+}
+.latest-post-heading{
+
+    width: 89%;
+    margin: 0 auto;
+    font-family: Raleway,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: -.6px;
+    text-align: left;
+    color: #000;
+    margin-bottom: 20px;
+}
+.filter-logo{
+
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  align-items: center;
+}
+.filter-logo-para{
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+.filter-para{
+  font-size: 17px;
+    font-weight: 800;
+    margin-left: 0.5em;
+
+}
+
+.latest-post-blog-categories{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 89%;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+.lpbc{
+    width: auto;
+    font-size: .75em;
+    color: #0084ff;
+    padding: 6px 16px;
+    border-radius: 15px;
+    border: 1px solid #0084ff;
+    margin: 5px;
+    padding: 6px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    list-style: none;
+
+}
+.lpbc:hover{
+  background-color: #0084ff;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.lpbc1{
+  color: #fff;
+  background: #0084ff;
+  background: -webkit-linear-gradient(181deg,#0048ff,#0096ff);
+  background: -o-linear-gradient(181deg,#0048ff,#0096ff);
+  background: linear-gradient(269deg,#0048ff,#0096ff);
+  width: auto;
+  font-size: .75em;
+  padding: 6px 16px;
+  border-radius: 15px;
+  border: 1px solid #0084ff;
+  margin: 5px;
+  padding: 6px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blogcard-container{
+  border: 1px solid rgba(0,168,255,.3);
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+.blogcard-textdecoration{
+ 
+    border: 1px solid #0084FF;
+    width: calc(25%-20px);
+    height: 400px;
+    margin: 10px 10px;
+    box-sizing: border-box;  
+}
+
+.blogcard-publishdate{
+  font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    margin-top: 0.3em;
+    font-family: Roboto;
+
+}
+.blogcard-authourname{
+  font-family: Raleway,sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 0;
+  font-size: .75em;
+  font-weight: 500;
+  line-height: 2;
+  color: #0096ff;
+  padding-top: 4px;
+}
+.blogcard-title{
+  font-family: Raleway,sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.14;
+  color: #000;
+}
+.grid-cards{
+  border: 1px solid black;
+  width: 70%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.card-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  width: 70%;
+  margin: 0 auto;
+  
+  
+}
+.card-1{
+  width: calc(30% - 10px);
+  border: 1px solid #0084ff;
+  border-radius: 5px;
+
+
+  margin-bottom: 20px;
+}
+.card-img-1{
+  width: 100%;
+  border-radius: 5px ;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+.card-title{
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.14;
+    color: #000;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+
+}
+.name-link{
+ 
+  color: #0084FF;
+}
+.img-description{
+
+  padding: 20px;
+border-radius: 5px;
+  background-color: #ffffff;
+  
+}
+.eyd-img{
+  width: 50px;
+  height: 50px;
+  width: 100%;
+}
+.name-date{
+  margin-top: 10px;
+  font-family: Raleway,sans-serif;
+  font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 10px 0px;
+    white-space: nowrap;
+
+  
+}
+.card-description{
+ 
+
+  opacity: .9;
+  font-family: Raleway,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: .35px;
+  text-align: left;
+  background-color: white;
+  color: rgba(0,0,0,.7);
+  margin: 0.8em 0;
+
 }
